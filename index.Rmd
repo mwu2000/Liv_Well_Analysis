@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Background and Motivating Questions
 
-> Since the 1990s, global marriage rates have been on a steady decline (Esteban Ortiz-Ospina and Max Roser 2020). In the United States, rates are the lowest point in recorded history, and the same is true for the United Kingdom and Australia. Changing attitudes towards non-nuclear family structures, the widespread use of contraception, and the increased number of working women are all possible factors that have contributed to the decline in marriage (Esteban Ortiz-Ospina and Max Roser 2020, George A. Akerlof and Janet L. Yellen 1996).
+Since the 1990s, global marriage rates have been on a steady decline (Esteban Ortiz-Ospina and Max Roser 2020). In the United States, rates are the lowest point in recorded history, and the same is true for the United Kingdom and Australia. Changing attitudes towards non-nuclear family structures, the widespread use of contraception, and the increased number of working women are all possible factors that have contributed to the decline in marriage (Esteban Ortiz-Ospina and Max Roser 2020, George A. Akerlof and Janet L. Yellen 1996).
 
-> While much research has been done on this phenomenon in wealthy countries, less attention has been paid to marriage trends in low to mid-income nations. The following blog post explores trends in marriage rates amongst 52 developing countries from 1990-2019.
+While much research has been done on this phenomenon in wealthy countries, less attention has been paid to marriage trends in low to mid-income nations. The following blog post explores trends in marriage rates amongst 52 developing countries from 1990-2019.
 
-> Our motivating questions are:
+Our motivating questions are:
 1. Which countries in our dataset have the highest rates of marriage?
 2. How have marriage rates changed between 1990-2019 for countries in our dataset?
 3. Is there a relationship between the use of contraceptives and changes in marriage rates among the countries in our dataset?
@@ -43,9 +43,9 @@ live_well <- read_csv("livwell_lin_interpolated.csv")
 indicators <- read_csv("indicators.csv")
 ```
 
-> We employ the *LivWell* dataset published in Nature Magazine by Camille Belmin et al. (2022), a longitudinal dataset on the health and well-being of women in low to middle income countries. The data were collected primarily through the Demographic and Health Survey (DHS) and features observations from 1990-2019. Data can be downloaded [here]{https://zenodo.org/record/7277104}.
+We employ the *LivWell* dataset published in Nature Magazine by Camille Belmin et al. (2022), a longitudinal dataset on the health and well-being of women in low to middle income countries. The data were collected primarily through the Demographic and Health Survey (DHS) and features observations from 1990-2019. Data can be downloaded [here]{https://zenodo.org/record/7277104}.
 
-> Below is a map of all of the countries included in our dataset.
+Below is a map of all of the countries included in our dataset.
 
 ```{r, fig.width=9, message = FALSE, warning=FALSE}
 
