@@ -228,13 +228,13 @@ Below is a map of all of the countries included in our dataset.
 </tbody>
 </table>
 
-> After averaging the percentage of women married across all years and
-> subregions (i.e. different counties in each country), we found that
-> three adjacent countries in West Africa, Mali, Niger, and Burkina
-> Faso, had the highest percentages of married women averaged across
-> 1990-2019. Meanwhile, Namibia, South Africa, and Rwanda had the lowest
-> percentages of married women, with only 38.64% of women in Namibia
-> married on average.
+After averaging the percentage of women married across all years and
+subregions (i.e. different counties in each country), we found that
+three adjacent countries in West Africa, Mali, Niger, and Burkina Faso,
+had the highest percentages of married women averaged across 1990-2019.
+Meanwhile, Namibia, South Africa, and Rwanda had the lowest percentages
+of married women, with only 38.64% of women in Namibia married on
+average.
 
 ### Marriage Rates Over Time
 
@@ -270,12 +270,12 @@ Below is a map of all of the countries included in our dataset.
 
     anim_save("married.gif", gif)
 
-> In this animation, countries with observations for a given year appear
-> on the map. Not all countries have observations for every year. From
-> the map, we observe that the percentage of married women was generally
-> consistent in each country. Percentages did not drastically fluctuate,
-> and countries tended to have a steady increase or decrease in marriage
-> rates.
+In this animation, countries with observations for a given year appear
+on the map. Not all countries have observations for every year. From the
+map, we observe that the percentage of married women was generally
+consistent in each country. Percentages did not drastically fluctuate,
+and countries tended to have a steady increase or decrease in marriage
+rates.
 
 ## Contraception Rates Over Time
 
@@ -309,12 +309,12 @@ Below is a map of all of the countries included in our dataset.
 
     anim_save("contraceptives.gif", contra_gif)
 
-> Already, we see an inverse relationship between the percentage of
-> women married and the percentage of women using contraception. It
-> seems that the higher the rate of women using contraception, the lower
-> the marriage rate. For instance, there is a noticeable increase of
-> contraception use in South Africa and a noticeable decrease in
-> marriage. Let’s examine this relationship further.
+Already, we see an inverse relationship between the percentage of women
+married and the percentage of women using contraception. It seems that
+the higher the rate of women using contraception, the lower the marriage
+rate. For instance, there is a noticeable increase of contraception use
+in South Africa and a noticeable decrease in marriage. Let’s examine
+this relationship further.
 
     ggplot(live_well, aes(x = RH_contr_p, y = DM_marr_p))+
     geom_point(size = 0.5, alpha = 0.2)+ 
@@ -325,28 +325,28 @@ Below is a map of all of the countries included in our dataset.
 
 ![](index_files/figure-markdown_strict/unnamed-chunk-9-1.png)
 
-> After finding the Pearson Correlation between the percentage of women
-> married versus the percentage of women using contraception for all
-> subregions and all years available in the dataset, we found a weak,
-> negative relationship between the two variables. However, when we plot
-> the data, we see that there is a slight, upward-facing parabolic curve
-> and that the line of best fit that trends downwards is primarily
-> influenced by outliers. This relationship implies that countries with
-> low and high rates of women using contraception have relatively high
-> rates of marriage while countries with ~20-40% of women using
-> contraception have the lowest rates of married women. Other variables,
-> such as religious conservatism or wealth, could be confounding our
-> results and be a stronger indication of marriage rates.
+After finding the Pearson Correlation between the percentage of women
+married versus the percentage of women using contraception for all
+subregions and all years available in the dataset, we found a weak,
+negative relationship between the two variables. However, when we plot
+the data, we see that there is a slight, upward-facing parabolic curve
+and that the line of best fit that trends downwards is primarily
+influenced by outliers. This relationship implies that countries with
+low and high rates of women using contraception have relatively high
+rates of marriage while countries with ~20-40% of women using
+contraception have the lowest rates of married women. Other variables,
+such as religious conservatism or wealth, could be confounding our
+results and be a stronger indication of marriage rates.
 
 # Future Directions
 
-> This blog post serves as an exploratory analysis to our inquiry into
-> marriage trends among women in low to middle income nations. Though we
-> predicted that contraception use rates would be a predictor of
-> marriage rates, we only found a weak, negative relationship between
-> the two variables in our data. A multivariate analysis such as
-> multiple regression could be pursued to determine other predictors of
-> marriage rates and to find the relationship between various factors.
+This blog post serves as an exploratory analysis to our inquiry into
+marriage trends among women in low to middle income nations. Though we
+predicted that contraception use rates would be a predictor of marriage
+rates, we only found a weak, negative relationship between the two
+variables in our data. A multivariate analysis such as multiple
+regression could be pursued to determine other predictors of marriage
+rates and to find the relationship between various factors.
 
 # Brief Bibliography
 
